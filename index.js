@@ -7,7 +7,7 @@ const authRouter=require('./router/auth');
 var cors = require('cors')
 
 
-app.use(cors()) 
+app.use(cors('https://pro-manage-frontend-sage.vercel.app/')) 
 app.use(express.json());
 app.use(authRouter);
 
